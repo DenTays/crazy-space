@@ -44,7 +44,7 @@ OOP.forInt(25, function (i) {
 		file : 'img/gr.png',
 		w : width / 20,
 		onload : function () {
-			this.x = i * this.w;
+			this.x = i * this.w-3;
 			this.y = -this.h + height;
 		}
 	});
@@ -58,7 +58,7 @@ var drawGR = function () {
 		el.move(p(-2, 0));
 
 		if (el.x + el.w < 0) {
-			el.x = oldG.x + oldG.w;
+			el.x = oldG.x + oldG.w - 5;
 			oldG = el;
 		}
 
